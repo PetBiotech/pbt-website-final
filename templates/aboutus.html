@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="Keywords" content="pet biotech, pet biotech lab bangalore, pet biotech lab, pet biotech companies
+    , bhu pet biotechnology syllabus
+    , j pet environ biotechnol
+    , bhu pet plant biotechnology syllabus
+    , biotech pet shop iloilo
+    , pet pharm biotech
+    , boreal pet food lincoln biotech
+    , pet care bio examples
+    , pet bio examples
+    , biotech portable biogas plant price
+    , a biotech company
+    , a pet bee
+    , bio-pet
+    , animal biotech (bangalore) pvt ltd
+    , animal behavior biotech
+    , animal biotech companies
+    , bio bio near me
+    , bio fish vs bio live
+    , animal biotech.com
+    , dog biotech company
+    , bluebird bio vs crispr therapeutics
+    , biotech companies near alewife
+    , animal disease biotech">
+    <meta name="description" content="We are a biotech company that specializes in animal and pet diagnostics">
+    <meta name="author" content="Anand & Kaustubh">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style/aboutus.css') }}">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    {% block aboutUs %}
+    <div class="aboutusBody" id="aboutUsBody">
+        <div class="body1">
+            <p class="title">About Us</p>
+            <div class="underline"></div>
+        </div>
+        <div class="aboutUsItems addFadeIn">
+            <div class="container0">
+                <span class="imgtext">In Association With</span>
+                <img alt="Image" src="{{ url_for('static', filename='image/logo-new.png') }}" class="image">
+            </div>
+            <div class="container1">
+                <p>PetBiotech distills research experience from Indian Institute of Science, one of the best
+                    research organization in the country with a rich tradition of over a 100 years. Best minds from
+                    Indian Institute of Science are involved in designing products and services offered by
+                    PetBiotech.</p>
+                <p>At PetBiotech, we believe that every pet deserves the best possible care. We strive to provide
+                    our customers with innovative, high-quality products and services that help them keep their pets
+                    healthy and happy.
+                </p>
+                <p>
+                    Our team consists of experienced professionals with expertise in pet care, nutrition, and
+                    health. We work together to ensure that our customers receive personalized attention and the
+                    best possible service.
+                </p>
+                <p><i>"We look forward to serving you and your furry friends."</i></p>
+            </div>
+        </div>
+    </div>
+    {% endblock aboutUs %}
+</body>
+
+</html>

@@ -1,0 +1,341 @@
+/* text animation */
+
+.landingPageBody {
+    width: 100%;
+    /* min-height: 100vh; */
+    height: fit-content;
+    padding: 150px 0 50px 0;
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    /* box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.5); */
+}
+
+.blob1 {
+    position: absolute;
+    width: 1000px;
+    height: 1000px;
+    left: -30%;
+    top: -60%;
+    opacity: 1;
+    animation: rotate 10s linear infinite;
+    transform-origin: center center;
+}
+.blob2{
+    position: absolute;
+    width: 1000px;
+    height: 1000px;
+    right: -30%;
+    top: -30%;
+    opacity: 1;
+    animation: rotate 10s linear infinite;
+    transform-origin: center center;
+}
+
+@keyframes rotate{
+    from{
+        transform: rotate(0deg);
+    }to{
+        transform: rotate(360deg);
+    }
+}
+
+.landingPageBody .upperblock {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.leftItemParent {
+    min-width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    /* top:-20px; */
+    z-index: 1;
+}
+
+.landingPageBody .leftItem {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    word-break: keep-all;
+    padding: 0px 50px;
+    cursor: context-menu;
+    z-index: 1;
+}
+
+.landingPageBody .rightItem {
+    min-width: 40%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.landingPageBody .rightItem .landingPageImage {
+    /* margin-top: 50px; */
+    /* width: 70%; */
+    position: relative;
+    width: 100%;
+    /* right: -35px; */
+    bottom: 0px;
+}
+
+.landingPageBody .leftItem .title {
+    width: 100%;
+    /* text-align: center; */
+    font-size: 5rem;
+    font-weight: bolder;
+    color: #0ab9fc;
+    transition: all ease-in-out 0.5s;
+    -o-transition: all ease-in-out 0.5s;
+    -webkit-transition: all ease-in-out 0.5s;
+    -moz-transition: all ease-in-out 0.5s;
+    /* text-transform: uppercase; */
+}
+
+.landingPageBody .leftItem .underTitle {
+    width: 100%;
+    /* text-align: center; */
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: -50px;
+    letter-spacing: 2px;
+    word-spacing: 10px;
+    color: #303030;
+    transition: all ease-in-out 0.5s;
+    -o-transition: all ease-in-out 0.5s;
+    -webkit-transition: all ease-in-out 0.5s;
+    -moz-transition: all ease-in-out 0.5s;
+    /* color: white; */
+}
+
+.landingPageBody .leftItem .titleContext {
+    font-size: 28px;
+    font-weight: bold;
+    width: 100%;
+    /* text-align: center; */
+    margin-top: 50px;
+    color: #303030;
+    letter-spacing: 1.5px;
+    word-spacing: 6px;
+    transition: all ease-in-out 0.5s;
+    -o-transition: all ease-in-out 0.5s;
+    -webkit-transition: all ease-in-out 0.5s;
+    -moz-transition: all ease-in-out 0.5s;
+    color: white;
+}
+
+.landingPageBody .lowerblock {
+    width: 100%;
+    height: fit-content;
+    padding: 50px 20px 50px 0;
+    z-index: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.landingPageBody .lowerblock .landingCards {
+    position: relative;
+    width: fit-content;
+    max-width: 200px;
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: fit-content;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    background-color: white;
+    transition: all 0.15s linear;
+    font-size: 18px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.landingPageBody .lowerblock .landingCards:hover {
+    transform: scale(1.05);
+}
+
+@media screen and (max-width:1100px) {
+    .blob1 {
+        top: -20%;
+        left: -60%;
+    }
+
+    .blob2 {
+        top: 35%;
+        right: -40%;
+        opacity: 0.5;
+    }
+    .landingPageBody {
+        height: fit-content;
+        flex-direction: column-reverse;
+        padding: 100px 10px 20px 10px;
+        padding-left: 0;
+        padding-right: 0;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .landingPageBody .leftItem,
+    .landingPageBody .rightItem {
+        width: 100%;
+        height: fit-content;
+    }
+
+    .landingPageBody .leftItemParent {
+        width: 100%;
+    }
+
+    .landingPageBody .leftItem {
+        clip-path: none;
+        width: 100%;
+    }
+
+    .landingPageBody .rightItem .landingPageImage {
+        width: 120%;
+        right: 0px;
+    }
+
+    .landingPageBody .leftItem .title,
+    .landingPageBody .leftItem .underTitle,
+    .landingPageBody .leftItem .titleContext {
+        text-align: center;
+    }
+
+    .landingPageBody .leftItem .titleContext {
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+}
+@media screen and (max-width:1000px){
+    .landingPageBody{
+        padding-top: 150px;
+    }
+    .blob1{
+        width: 500px;
+        height: 500px;
+        top:0;
+        left:-30%;
+    }
+    .blob2 {
+        top: 25%;
+        right:-40%;
+    }
+    .landingPageBody .rightItem .landingPageImage{
+        width: 150%;
+        right: 20%;
+    }
+}
+@media screen and (max-width:800px) {
+    .blob2 {
+        top: 35%;
+        right: -40%;
+    }
+    .landingPageBody .upperblock{
+        flex-direction: column-reverse;
+    }
+    .landingPageBody .rightItem{
+        width: 100%;
+    }
+    .landingPageBody .rightItem .landingPageImage {
+        width: 80%;
+        right: 0px;
+    }
+    .landingPageBody .leftItem{
+        align-items: center;
+    }
+    .landingPageBody .lowerblock{
+        justify-content: center;
+    }
+    .landingPageBody .leftItem .titleContext {
+        padding-left: 30px;
+        padding-right: 30px;
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .landingPageBody .rightItem .landingPageImage {
+        width: 100%;
+        right: 0px;
+    }
+
+    .landingPageBody .leftItem .title {
+        font-size: 4rem;
+    }
+
+    .landingPageBody .leftItem .underTitle {
+        font-size: 1.15rem;
+        margin-top: -40px;
+    }
+
+    .landingPageBody .leftItem .titleContext {
+        padding-left: 30px;
+        padding-right: 30px;
+        font-size: 20px;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .blob1 {
+        top: -20%;
+        left: -50%;
+    }
+
+    .blob2 {
+        top: 35%;
+        right: -70%;
+        opacity: 0.5;
+    }
+    .landingPageBody {
+        padding-top: 150px;
+    }
+
+    .landingPageBody .leftItem {
+        background-position: center;
+        padding: 10px;
+    }
+
+    .landingPageBody .rightItem .landingPageImage {
+        width: 100%;
+        right: 0px;
+    }
+
+    .landingPageBody .leftItem .title {
+        font-size: 3rem;
+    }
+
+    .landingPageBody .leftItem .underTitle {
+        font-size: 0.75rem;
+        margin-top: -30px;
+    }
+
+    .landingPageBody .leftItem .titleContext {
+        padding-left: 30px;
+        padding-right: 30px;
+        font-size: 16px;
+        margin-top: 20px;
+    }
+}

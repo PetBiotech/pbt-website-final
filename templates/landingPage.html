@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style/landingPage.css') }}" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    {% block landingPage %}
+    <div class="landingPageBody">
+        <svg class="blob1" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <linearGradient id="b" gradientTransform="rotate(-45 .5 .5)">
+                    <stop offset="0%" stop-color="#FFDEE9" />
+                    <stop offset="100%" stop-color="#B5FFFC" />
+                </linearGradient>
+                <clipPath id="a">
+                    <path fill="currentColor" d="M722.5 716q-222.5 216-432 0t0-427.5q209.5-211.5 432 0t0 427.5Z" />
+                </clipPath>
+            </defs>
+            <g clip-path="url(#a)">
+                <path fill="url(#b)" d="M722.5 716q-222.5 216-432 0t0-427.5q209.5-211.5 432 0t0 427.5Z" />
+            </g>
+        </svg>
+        <svg class="blob2" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <linearGradient id="b" gradientTransform="rotate(135 .5 .5)">
+                    <stop offset="0%" stop-color="#8EC5FC" />
+                    <stop offset="100%" stop-color="#E0C3FC" />
+                </linearGradient>
+                <clipPath id="a">
+                    <path fill="currentColor" d="M722.5 716q-222.5 216-432 0t0-427.5q209.5-211.5 432 0t0 427.5Z" />
+                </clipPath>
+            </defs>
+            <g clip-path="url(#a)">
+                <path fill="url(#b)" d="M722.5 716q-222.5 216-432 0t0-427.5q209.5-211.5 432 0t0 427.5Z" />
+            </g>
+        </svg>
+        <div class="upperblock">
+            <div class="leftItemParent">
+                <div class="leftItem">
+                    <div>
+                        <p class="title"><span style="color:#112075;">P</span>et<span
+                                style="color:#112075;">B</span>iotech</p>
+                        <p class="underTitle">Genomics facilitated healthcare</p>
+                    </div>
+                    <div class="lowerblock">
+                        <div class="landingCard1 landingCards">20+ Cities</div>
+                        <div class="landingCard2 landingCards">New Technologies</div>
+                        <div class="landingCard3 landingCards">Experience Researchers</div>
+                    </div>
+                    <p class="titleContext"></p>
+                </div>
+            </div>
+            <div class="rightItem">
+                <img class="landingPageImage" alt="Image" src="{{ url_for('static', filename='image/dog_cat.png') }}">
+            </div>
+        </div>
+        
+    </div>
+    {% endblock landingPage %}
+</body>
+
+</html>
